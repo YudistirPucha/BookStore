@@ -7,14 +7,6 @@ import java.io.*;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-//Please provide a software application which calculates the final amount to be
-//        paid when given a list of books. You can and should use more than one class
-//in your solution. Consider the longevity of the application. How would one, for
-//        example, add another discount at a later date ? You should apply best
-//        practice in your solution. You should be able to provide some guarantee that
-//        the finished product works as expected
-
-
 
 // 1. the main method will contain user interface to allow book selection
 // 2. the books to be stored in another class which can be manipulated ie. add books
@@ -82,6 +74,7 @@ public class Main {
 	}
 
     public static void main(String[] args) {
+	    
 	Book book1, book2, book3;
 
 	book1 = new Book(" Moby Dick", 1920, 20.20);
@@ -96,24 +89,6 @@ public class Main {
 
 	double amount2 = (double) Discounts.BooksOver30(book1.getPrice() + book2.getPrice() + book3.getPrice());
 	System.out.println(amount2);
-
-//	 new JListSelected().setVisible(true);
-
-//	 String FileName = "com/company/BookShelf.csv";
-//	 File file = new File(FileName);
-//	 try {
-//		 Scanner inputStream = new Scanner(file);
-//		 while(inputStream.hasNext()){
-//		 	String data = inputStream.next();
-//		 	System.out.println(data);
-//		 }
-//		 inputStream.close();
-//	 } catch (FileNotFoundException e){
-//	 	e.printStackTrace();
-//	 }
-
-
-
 
 
     }
